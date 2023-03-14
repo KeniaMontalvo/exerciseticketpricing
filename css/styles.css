@@ -1,0 +1,91 @@
+/*Jerarquía #3 de estilos después de estilos in line y etiqueta style*/
+span {
+    color: green;
+    font-size: 26px;
+}
+
+/*. es con class y # es con id*/
+
+#text1{
+    color:black;
+}
+
+.texto-con-estilos {
+    color: orange;
+    font-size: 30px;
+}
+
+/*CSS va a tomar lo último escrito*/
+.texto-con-estilos {
+    color: rebeccapurple;
+    font-size: 30px;
+}
+
+/*--------------------------------------------------------*/
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+section {
+    display: flex;
+    /*Para que vaya de izquierda a derecha*/
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*Para no ocupar más espacio del que se tiene disponible*/
+    width: 100%;
+    /*Por si un elemento ya no cabe, lo manda a la siguiente columna*/
+    flex-wrap: wrap;
+}
+
+article {
+    text-align: center;
+    width: 320px;
+    margin: 20px;
+}
+
+.card-header {
+    background-color: rgb(216, 79, 79);
+    color: white;
+    font-weight: 600;
+    /*Padding empuja los elementos desde adentro, mientras que el margin empuja los elementos desde afuera*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 28px;
+}
+
+article:first-child .card-header {
+    background-color: rgb(118, 120, 236);
+}
+
+article:last-child .card-header {
+    background-color: skyblue;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.description {
+    margin: 10px;
+}
+
+.button {
+    background-color: mediumpurple;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: mediumorchid;
+    cursor: pointer;
+}
